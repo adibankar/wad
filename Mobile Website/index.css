@@ -1,0 +1,31 @@
+.container {
+    background-color: #e5e5e5;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 272px;
+  }
+  
+  .answer {
+    background-color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: right;
+    border-radius: 5px;
+    padding: 5px 25px;
+    margin: 0 10px;
+    height: 46px;
+  }
+  
+  .ui-block-d .ui-btn:last-child {
+    padding: 2.3em 1em;
+  }
+
+  input{
+    width: 200px !important;
+  }
+
+  body{
+    
+    padding: 20px;
+  }

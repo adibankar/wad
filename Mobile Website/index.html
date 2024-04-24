@@ -1,0 +1,112 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Theme Download</title>
+	<link rel="stylesheet" href="themes/abc.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<link rel="stylesheet" href="index.css">
+	
+	
+</head>
+<body>
+	<div data-role="page" data-theme="b" id="home">
+		<div data-role="header" data-position="inline">
+			<h1>KBTCOE</h1>
+		</div>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" class="ui-button-active" data-transition="slide" >Home</a></li>
+				<li><a href="#contactus" class="ui-state-persis" data-transition="slide">Contact Us</a></li>
+				<li><a href="#login" class="ui-state-persis" data-transition="slide">Login</a></li>
+			</ul>
+		</div>
+		<div class="ui-content">
+			<section class="container" ng-controller="MainController as main">
+			  <h1>This is Home Page of our Website</h1>
+			</section>
+			<script src="index.js"></script>
+		  </div>
+		
+	</div>
+
+	<div data-role="page" data-theme="b" id="contactus">
+		<div data-role="header" data-position="inline">
+			<h1>KBTCOE</h1>
+		</div>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" class="ui-state-persis" data-transition="slide" data-direction="reverse">Home</a></li>
+				<li><a href="#contactus" class="ui-state-persis ui-button-active" data-transition="slide">Contact Us</a></li>
+				<li><a href="#login" class="ui-state-persis" data-transition="slide">Login</a></li>
+			</ul>
+		</div>
+
+		<div>
+			<h1>Deepak Bhalerao</h1>
+			<h3>Email : kbtug21317@kbtcoe.org</h3>
+			<h3>Mobile : 4534958413548574</h3>
+			<h3>Address : At Post. KBTCOE, Near Udoji Maharaj Board, Gangapur Road, Nashik	</h3>
+
+		</div>
+		<div class="contactme">
+			<label for="name">Name</label>
+			<input type="text" placeholder="Name">
+			<label for="email">Email</label>
+			<input type="email" placeholder="Email">
+			<label for="Message">Message</label>
+			<textarea name="message" id="Message" cols="30" rows="10">
+
+			</textarea>
+			<a href="#success" data-transition="pop" data-rel="popup" class="ui-shadow  ui-corner-all">Submit</a>
+
+			<div data-role="popup" id="success">
+				<h1>Message Submited Successfully</h1>
+				<!-- <button data-icon="ui-icon-delete" data-rel="back"></button> -->
+			</div>
+		</div>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div data-role="page" data-theme="b" id="login">
+		<div data-role="header" data-position="inline">
+			<h1>KBTCOE</h1>
+		</div>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" class="ui-button-active" data-transition="slide" data-direction="reverse">Home</a></li>
+				<li><a href="#contactus" class="ui-state-persis" data-transition="slide" data-direction="reverse">Contact Us</a></li>
+				<li><a href="#login" class="ui-state-persis ui-button-active" data-transition="slide">Login</a></li>
+			</ul>
+		</div>
+
+		<div>
+			<label for="name">Name</label>
+			<input type="text" placeholder="Name">
+			<label for="email">Email</label>
+			<input type="email" placeholder="Email">
+			<label for="password">Password</label>
+			<input type="password" placeholder="Password">
+			<a class="ui-shadow ui-button ui-corner-all" data-transition="pop" data-rel='popup' href="#loginsuccess">Login</a>
+
+
+			<div data-role="popup" id="loginsuccess">
+				Login Succesfull
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+.generateQuestions{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 30px;
+    column-gap: 50px;
+    row-gap: 50px   ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.generateQuestions form{
+    max-width: 800px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    row-gap: 20px;
+    font-size: 1.3rem;
+    margin: 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.generateQuestions form .questionfield{
+    display: flex;
+    /* justify-content: space-between; */
+    column-gap: 20px;
+}
+.generateQuestions form .optionfield{
+    display: flex;
+    column-gap: 20px;   
+    display: flex;
+    align-items: center;
+}
+
+.generateQuestions form .optionfield textarea, .generateQuestions form .questionfield textarea{
+    min-width: 500px;
+    /* min-height: 60px; */
+    height: auto;
+    padding: 10px;
+    font-size: 1.07rem;
+    border-radius: 14px;
+    resize: none;
+    overflow: hidden;
+    
+}
+.generateQuestions form .questionfield textarea{
+    width: 100%;
+    height: 90px !important;
+}
+.generateQuestions form .questionfield span{
+    display: flex;
+    flex-direction: column;
+}
+.generateQuestions form .questionfield input{
+    width: 60px;
+    height: 40px;
+    margin-top: 8px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.generateQuestions form button[type='button']{
+    background-color: rgb(241, 215, 165);
+    padding: 10px;
+    width: 140px;
+    font-size: 1.1rem;
+    outline: none;
+    border-radius: 14px;
+    border: 1px solid gray;
+    transition: 0.3s ease-in;
+}
+.generateQuestions form button[type='button']:hover{
+    background-color: rgb(232, 185, 99);
+}
+.generateQuestions form button[type='submit']{
+    background-color: rgb(255, 189, 65);
+    padding: 10px;
+    width: 140px;
+    font-size: 1.1rem;
+    outline: none;
+    border-radius: 14px;
+    border: 1px solid gray;
+    transition: 0.3s ease-in;
+}
+.generateQuestions form button[type='submit']:hover{
+    background-color: rgb(193, 143, 49);
+}
+.generateQuestions form span{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Questions List */
+
+
+
+.generateQuestions .questionNoList{
+    max-width: 300px;
+    width: 100%;
+    height: 400px;
+    border: 2px solid gainsboro;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px 0;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.generateQuestions .questionNoList ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+
+.generateQuestions .questionNoList ul li{
+    list-style-type: none;
+    
+}
+.generateQuestions .questionNoList li button{
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid gray;
+    transition: 0.5s ease;
+}
+.generateQuestions .questionNoList li button:hover{
+    background-color: rgb(88, 175, 251);
+}
+
+.generateQuestions .questionNoList .addquestion{
+    background-color: rgb(255, 189, 65);
+    padding: 10px;
+    width: 140px;
+    font-size: 1.1rem;
+    outline: none;
+    border-radius: 14px;
+    border: 1px solid gray;
+    transition: 0.3s ease-in;
+    margin: 0px 45px;
+    position: absolute;
+    bottom: 20px;
+}
+.generateQuestions .questionNoList .addquestion:hover{
+    background-color: rgb(193, 143, 49);
+    
+}

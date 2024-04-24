@@ -1,0 +1,150 @@
+
+.attemptQuizzContainer{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    padding: 30px;
+    column-gap: 50px;
+    row-gap: 50px   ;
+}
+hr{
+    border: 2px solid black;
+    margin: 20px 0;
+}
+
+.QuestionList{
+    /* display: flex; */
+    max-width: 300px;
+    width: 100%;
+    
+    border: 2px solid gray;
+    padding: 30px;
+
+}
+.QuestionList ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.QuestionList ul li{
+    list-style-type: none;
+    
+}
+.QuestionList li button{
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid gray;
+    transition: 0.5s ease;
+}
+.QuestionList li button:hover{
+    background-color: rgb(88, 175, 251);
+}
+
+form{
+    max-width: 700px;
+    width: 100%;
+    padding: 30px;
+    border: 2px solid gainsboro;
+}
+form .questionContainer{
+    font-size: 1.4rem;
+}
+form ul{
+    list-style: none;
+    font-size: 1.2rem;
+}
+form ul li{
+    display: flex;
+    list-style: none;
+    margin: 20px 0;
+    border: 1px solid gray;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-in;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    /* background-color: red; */
+}
+form ul li:hover{
+    background-color: rgb(60, 147, 241);
+}
+form ul li input{
+    position: absolute;
+    z-index: 99;
+    margin-right: 20px;
+    opacity: 0.0;
+    transform: scale(800);
+}
+form ul li label{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: 100%;
+    font-size: 1.4rem;
+    /* padding: 15px;
+    padding-left: 20px; */
+    transform: translateX();
+    /* transform: scale(1.1); */
+}
+input[type="radio"]:checked + label{
+    background-color: rgb(7, 50, 180); 
+    width: 100%;
+
+  }
+  .questionSelected{
+    background-color: blue;
+  }
+
+.navbuttons{
+    display: flex;
+    justify-content: space-between ;
+    position: relative;
+}
+.next, .prev{
+    display: none;
+}
+.navbuttons .next.active, .navbuttons .prev.active{
+    display: block;
+    width: 140px;
+    padding: 8px 12px ;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(180, 220, 255);
+    transition: 0.3s ease-in;
+}
+.navbuttons .next.active{
+    /* position: absolute; */
+    right: 10px;
+    float: right;
+}
+.navbuttons .next:hover{
+    cursor: pointer;
+
+    background-color: rgb(86, 175, 252);
+}   
+.Submit{
+    width: 200px;
+    padding: 8px 12px ;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(246, 177, 99);
+    transition: 0.3s ease-in;
+    float: right;
+
+}
+.Submit:hover{
+    cursor: pointer;
+    background-color: rgb(255, 137, 2);
+}

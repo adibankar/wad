@@ -1,0 +1,45 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    column-gap: 20px;
+}
+.Home form, .Home .Quizz{
+    max-width: 700px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+.Home form input, .Home .Quizz button{
+    padding: 10px;
+    font-size: 1.2rem;  
+    width: 200px;
+    margin: 0 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+.Home form input[type='submit'], .Home .Quizz button{
+    background-color: rgb(245, 187, 80);
+    transition: 0.3s ease-in;
+}
+.Home form input[type='submit']:hover, .Home .Quizz button{
+    cursor: pointer;
+    background-color: rgb(255, 166, 0);
+}
+
+.Home .Quizz span{
+    display: flex;
+}
+.Home .Quizz button{
+    margin-left: 50px;
+}

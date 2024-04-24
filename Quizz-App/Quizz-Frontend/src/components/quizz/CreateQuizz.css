@@ -1,0 +1,111 @@
+.createquizz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.createquizz form{
+    max-width: 700px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    font-size: 1.3rem;
+    margin: 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.createquizz .createQuizzContainer{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: left;   
+ row-gap: 20px;
+
+}
+.createquizz form .field{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    row-gap: 10px;
+    justify-content: space-between;
+}
+.createquizz form label {
+    font-size: 1.4rem;
+    font-weight: 550;
+}
+
+.createquizz form input{
+    padding: 10px;
+    font-size: 1.2rem;  
+    /* width: 200px; */
+    /* margin: 0 20px; */
+    border: 1px solid gray;
+    border-radius: 10px;
+    /* text-align: center; */
+}
+
+.createquizz form input[type = 'submit']{
+    background-color: rgb(245, 187, 80);
+    transition: 0.3s ease-in;
+    font-weight: 550;
+}
+.createquizz form input[type = 'submit']:hover{
+    cursor: pointer;
+    background-color: rgb(255, 166, 0);
+}
+
+.createquizz form textarea{
+    resize: none;
+    height: 130px;
+    width: 300px;
+    padding: 20px;
+    font-size: 1.12rem;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+.quizzContainer{
+    max-width: 900px;
+    width: 100%;
+}
+
+
+.quizzContainer form{
+    width: 100%;
+    margin: 0 auto;
+}
+.question, .option{
+    width: 100%;
+    display: flex;
+    margin: 20px auto;
+
+}
+.quizzContainer form  textarea{
+    max-width: 900px;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+.questions textarea{
+    height: 100px;
+}
+.options textarea{
+    height: 70px;
+}
+
+
+
+.error{
+    color: red;
+}

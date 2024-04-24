@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100vw; */
+    background-color: rgb(203, 203, 203);
+    height: 100vh;
+}
+.form{
+    background-color: white;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 30px;
+    line-height: 2;
+}
+input{
+    height: 50px;
+    padding: 5px 15px ;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+button{
+    height: 50px;
+    margin: 20px;
+    background-color: rgb(125, 238, 255);
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="body">
+        <div class="form">
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            
+            <label for="name">Password</label>
+            <input type="password" name="password" id="password">
+            <button type="submit" id="login">login</button>
+            <p>Don't have an account : </p>
+            <button type="submit" id="register">Register</button>
+        </div>
+        
+    </div>
+
+    <script>
+        $(document).ready(()=>{
+            $('#login').click(()=>{
+                validateInfo = localStorage.getItem('registerInfo');
+                validateInfo = JSON.parse(validateInfo);
+
+                loginInfo = {                    
+                    email : $('#email').val(),                    
+                    password : $('#password').val(),
+                }
+
+                if(validateInfo.email === loginInfo.email && validateInfo.password === loginInfo.password){
+                    alert('Login Successfull');
+                    window.location.href = 'http://127.0.0.1:5500/ajax/home.html';
+                }
+                else{
+                    alert('Invalid Credentials, Please try again');
+                }
+            });
+
+            $('#register').click(()=>{
+                window.location.href = 'http://127.0.0.1:5500/ajax/signup.html';
+            })
+            
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="body">
+        <div class="form">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <label for="name">Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="name">Department</label>
+            <input type="text" name="dept" id="dept">
+            <label for="name">Password</label>
+            <input type="password" name="password" id="password">
+            <button type="submit" id="btn">Register</button>
+        </div>
+        
+    </div>
+
+
+    <script>
+        $(document).ready(()=>{
+            $('#btn').click(()=>{
+                const registerinfo = {
+                    name : $('#name').val(),
+                    dob : $('#dob').val(),
+                    email : $('#email').val(),
+                    dept : $('#dept').val(),
+                    password : $('#password').val(),
+
+                }
+
+
+                localStorage.setItem('registerInfo', JSON.stringify(registerinfo));
+                $(".body").load("http://127.0.0.1:5500/ajax/login.html");
+            })
+        })
+    </script>
+</body>
+</html>
